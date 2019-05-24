@@ -65,6 +65,14 @@ $ go get github.com/Qihoo360/wayne
 
 若您没有可用的 MySQL 服务，可以通过 docker-compose 快速创建：
 
+安装docker-compose过程中报错
+
+ERROR: Cannot uninstall 'requests'. It is a distutils installed project and thus we cannot accurately determine which files belong to it which would lead to only a partial uninstall.
+
+```
+$pip install docker-compose --ignore-installed requests 
+```
+
 ```bash
 $ docker-compose up -d mysql
 ```
